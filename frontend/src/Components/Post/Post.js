@@ -98,11 +98,11 @@ const Post = ({
         <div className="post-container">
             <div className="post-row">
                 <div className="user-profile">
-                    <Link to={`/user/${user._id}`}>
-                        <img src={user.avatar.url} alt="" />
+                    <Link to={`/user/${ownerId}`}>
+                        <img src={ownerImage} alt="" />
                     </Link>
                     <div>
-                        <p>{user.name}</p>
+                        <p>{ownerName}</p>
                         <span>{date.toString().split("T")[0]}</span>
                     </div>
                 </div>
