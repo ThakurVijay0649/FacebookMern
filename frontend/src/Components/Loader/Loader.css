@@ -1,0 +1,32 @@
+.loader {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 101;
+}
+
+.progressBar {
+    width: 0%;
+    height: 2px;
+    background: white;
+    animation: width 3s linear infinite;
+}
+
+@keyframes width {
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 50%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

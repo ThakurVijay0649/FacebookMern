@@ -1,0 +1,35 @@
+.newPostContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    margin: 0.3rem auto;
+    background: white;
+    padding: 1rem;
+    border-radius: 9px;
+}
+
+.newPostContainer hr {
+    display: block;
+    width: 100%;
+}
+
+.newPostContainer form {
+    padding: 0 !important;
+}
+
+.newPostContainer form input[type="file"]::-webkit-file-upload-button {
+    background-color: #1876f2;
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+@media screen and (max-width:900px) {
+    .newPostContainer {
+        width: 95vw;
+    }
+
+}
